@@ -11,3 +11,21 @@
        
     }
 }
+/* Styling the links to create circles */
+.circle-link {
+    display: inline-block;
+    padding: 10px 20px;  /* Adjust padding to make the circle size bigger or smaller */
+    border-radius: 50%;  /* Makes the link circular */
+    background-color: #4A90E2;  /* Circle color */
+    color: white;  /* Text color inside the circle */
+    text-align: center;
+    line-height: 1.5;  /* Centers the text vertically */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Adding hover effect */
+  .circle-link:hover {
+    background-color: #007BFF;  /* Change circle color on hover */
+    transform: scale(1.1);  /* Slight scale effect */
+  }
+ 

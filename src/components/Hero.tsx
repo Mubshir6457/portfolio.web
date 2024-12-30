@@ -1,27 +1,41 @@
-
-import React from 'react'
-import Navbar from './Navbar'
+import React from 'react';
+import Navbar from './Navbar';
 
 const Hero = () => {
   return (
+    <div
+  id="home"
+  className="min-h-screen bg-no-repeat bg-center bg-cover relative flex flex-col justify-center items-center"
+  style={{
    
-    <div id='hero' className=' min-h-screen bg-no-repeat bg-[url("/my-pic1.jpg")] bg-left lg:bg-[15%] bg-cover'
-    style={{backgroundSize:"25%"}}>
-   
-     
-      <Navbar/>
-      <div className='container grid lg:grid-cols-2 h-[calc(100vh-60px)]'>
-        <div className='hidden lg:block'></div>
-        <div className='text-[80px] sm:text-[100px] font-bold leading-tight flex justify-center items-center'>
-          <div>
-            <p  data-aos="fade-down-left">Hi</p>
-            <p  data-aos="fade-down-left">I am</p>
-            <p  data-aos="fade-down-left">Mubashir</p>
-          </div>
-        </div>
+    backgroundSize: "cover",
+  }}
+>
+  <Navbar />
+  <div className="container flex flex-col lg:flex-row items-center justify-center h-[calc(100vh-60px)]">
+    <div className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full overflow-hidden border-4 border-accent">
+      <img src="/my-pic1.jpg" alt="Mubashir" className="w-full h-full object-cover img-center" />
+    </div>
+    <div className="text-center lg:text-left lg:ml-10 mt-8 lg:mt-0" >
+      <h1 className="text-5xl sm:text-6xl font-bold text-white">
+        Hi, I am <span className="text-accent">Mubashir</span>
+      </h1>
+      <p className="text-lg sm:text-xl mt-4 text-white">
+        AI Student | Web Developer | Skiptracer
+      </p>
+      <div className="mt-6">
+        <a href="#projects" className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent-dark transition">
+          View My Work
+        </a>
+        <a href="#contact" className="ml-4 text-accent underline hover:text-accent-dark transition">
+          Get in Touch
+        </a>
+        
       </div>
     </div>
-  )
-}
+  </div>
+</div>
+  );
+};
 
-export default Hero
+export default Hero;
