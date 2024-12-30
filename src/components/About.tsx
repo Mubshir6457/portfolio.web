@@ -15,7 +15,7 @@ const About = () => {
         About Me
       </h2>
       <p className="text-white pt-4 text-lg md:text-xl text-justify leading-relaxed">
-        Hello, I am Mubashir!
+        Hi I am Mubashir!
         <br />
         
         I am an AI student passionate about exploring the potential of artificial intelligence to create innovative solutions. As a skilled web developer, I craft responsive and visually appealing websites that meet modern digital needs.
