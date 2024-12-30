@@ -21,6 +21,7 @@ const Contact = () => {
       from_name: name,
       from_email: email,
       message: message,
+
     };
     setTimeout(() => {
       setStatus('');
@@ -56,7 +57,7 @@ const Contact = () => {
       <div className="grid md:grid-cols-2 gap-12">
        
         <div className="space-y-8">
-          <h2 className="text-5xl text-white font-semibold" data-aos="zoom-in-up">Get in touch</h2>
+          <h2 className="text-5xl text-white font-semibold underline" data-aos="zoom-in-up">Get in touch</h2>
           <div className="flex flex-col gap-5">
             <div className="flex items-center gap-3">
               <ImMail size={30} />

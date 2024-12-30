@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSearch } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSearch, FaLaptopCode } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 
 const Skills = () => {
@@ -12,7 +12,7 @@ const Skills = () => {
         color: 'white',
       }}
     >
-      <h2 className="text-5xl text-center mb-8" data-aos="zoom-in-up">
+      <h2 className="text-5xl text-center mb-8 underline" data-aos="zoom-in-up">
         Skills
       </h2>
       <div className="grid md:grid-cols-2 gap-20 items-center">
@@ -60,6 +60,13 @@ const Skills = () => {
                 <FaSearch className="text-6xl text-green-500" />
               </div>
               <h2 className="text-xl">Skip Tracing</h2>
+            </div>
+            {/* Web Developer Skill */}
+            <div className="space-y-4">
+              <div className="flex justify-center items-center">
+                <FaLaptopCode className="text-6xl text-gray-500" />
+              </div>
+              <h2 className="text-xl">Web Developer</h2>
             </div>
           </div>
         </div>
