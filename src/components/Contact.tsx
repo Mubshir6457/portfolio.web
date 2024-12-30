@@ -32,7 +32,7 @@ const Contact = () => {
       templateParams,
       'r0NsozX-Um1umMpt5'
     )
-    .then((response) => {
+    .then(() => {
       setStatus('Message sent successfully!');
       setName('');
       setEmail('');
